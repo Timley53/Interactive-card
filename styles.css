@@ -1,0 +1,449 @@
+@media all and (max-width: 1440px) {
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Space Grotesk", sans-serif;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+  }
+  .card-section {
+    width: 35%;
+    height: 100%;
+    background: url("./images/bg-main-desktop.png");
+    overflow: visible;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+  }
+  .card-form {
+    width: 65%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-div {
+    position: relative;
+    width: 260px;
+    height: 260px;
+
+    padding: 1rem;
+  }
+  .front-div {
+    transform: translateX(250px);
+    margin: -90px;
+    margin-bottom: -100px;
+    margin-top: 2rem;
+
+    margin-left: 1rem;
+    background-image: url("./images/bg-card-front.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .back-div {
+    transform: translateX(300px);
+    /* margin-bottom: -120px; */
+    margin-left: 2.4rem;
+
+    background-image: url("./images/bg-card-back.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .card-logos img {
+    width: 22%;
+  }
+  .card-numbers {
+    position: absolute;
+    top: 30%;
+    width: 85%;
+    margin: auto auto;
+    font-size: 19.5px;
+    text-align: center;
+    color: white;
+    /* border: 1px solid white; */
+  }
+  .name-exp {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    /* padding: 0.2rem; */
+    justify-content: space-between;
+    color: white;
+    font-size: 12.5px;
+  }
+  .name {
+    /* width: 50%; */
+  }
+  .cvv {
+    position: absolute;
+    color: white;
+    top: 25%;
+    right: 15%;
+    font-size: 13px;
+  }
+
+  .form {
+    width: 40%;
+    /* border: 1px solid blueviolet; */
+    margin: auto auto;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    transition: all 1s;
+    opacity: 1;
+    /* align-items: center; */
+  }
+
+  .form label {
+    font-size: 11px;
+  }
+  .box {
+    width: 90%;
+    /* margin: 0.3rem; */
+    padding: 0.5rem;
+    /* border: 1px solid red; */
+    margin: 0.1rem;
+  }
+  .cardholder-input {
+    width: 80%;
+    padding: 0.6rem;
+    border-radius: 7px;
+    border: 1px solid hsl(270, 3%, 87%);
+    margin: 0.1rem 0;
+    font-size: 14px;
+  }
+  .error {
+    color: rgba(209, 22, 22, 0.795);
+    padding-left: 0.3rem;
+    font-size: 11px;
+  }
+  .cardholder-input:focus-visible {
+    outline: 1.5px solid hsl(278, 82%, 15%);
+    border: none;
+  }
+  .exp-cvv {
+    width: 90%;
+    padding: 0.5rem;
+    margin: 0.1rem;
+    display: flex;
+  }
+  .exp {
+    width: 40%;
+
+    /* outline: 1.5px solid hsl(278, 71%, 16%); */
+  }
+  .date {
+    width: 30%;
+    padding: 0.5rem;
+    border-radius: 7px;
+    border: 1px solid hsl(270, 3%, 87%);
+    margin: 0.2rem 0;
+  }
+  .cvv-box {
+    width: 50%;
+  }
+  .cvv-code {
+    width: 80%;
+    padding: 0.5rem;
+    border-radius: 7px;
+    border: 1px solid hsl(270, 3%, 87%);
+    margin: 0.2rem 0;
+  }
+  .date:focus-visible,
+  .cvv-code:focus-visible {
+    outline: 1px solid hsl(277, 78%, 15%);
+    border: none;
+  }
+  .submit {
+    /* align-self: center; */
+    margin: 0.6rem;
+    padding: 0.7rem 0.5rem;
+    width: 78%;
+    border-radius: 7px;
+    border: none;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .done {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: small;
+    font-weight: bolder;
+    color: hsl(270, 14%, 64%);
+  }
+  .done img {
+    width: 20%;
+  }
+  .done h1 {
+    color: hsl(278, 68%, 11%);
+    font-weight: 550;
+  }
+  .continue {
+    margin: 1.9rem 0;
+    padding: 0.8rem;
+    width: 80%;
+    color: white;
+    font-size: small;
+    background-color: hsl(279, 85%, 10%);
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 1s;
+    opacity: 1;
+  }
+
+  .continue:hover {
+    background-color: hsl(277, 82%, 26%);
+  }
+  .submit:hover {
+    background-color: hsl(277, 82%, 26%);
+  }
+  .none {
+    display: none;
+  }
+}
+
+@media all and (max-width: 450px) {
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Space Grotesk", sans-serif;
+  }
+
+  .container {
+    width: 100%;
+    display: block;
+    /* flex-direction: column; */
+    height: 120vh;
+  }
+  .card-section {
+    width: 100%;
+    height: 40%;
+    margin-top: -80px;
+    background: url("./images/bg-main-desktop.png");
+    overflow: visible;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+  }
+  .card-form {
+    margin-top: 5rem;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+  }
+
+  .card-div {
+    position: relative;
+    width: 70%;
+    height: 300px;
+
+    padding: 1rem;
+  }
+  .front-div {
+    margin: 0;
+    transform: translate(5%, 37%);
+    z-index: 100;
+
+    margin-bottom: 0;
+    margin-top: 0;
+
+    margin-left: 0;
+    background-image: url("./images/bg-card-front.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    order: 2;
+  }
+  .back-div {
+    order: 1;
+    transform: translate(20%, 80%);
+    /* margin-bottom: -120px; */
+    margin-left: 0;
+
+    background-image: url("./images/bg-card-back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* --- */
+
+  .card-logos img {
+    width: 22%;
+  }
+  .card-numbers {
+    position: absolute;
+    top: 55%;
+    width: 85%;
+    margin: auto auto;
+    font-size: 19.5px;
+    text-align: center;
+    color: white;
+    /* border: 1px solid white; */
+  }
+  .name-exp {
+    position: absolute;
+    top: 83%;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    /* padding: 0.2rem; */
+    justify-content: space-between;
+    color: white;
+    font-size: 13.5px;
+  }
+  .name {
+    /* width: 50%; */
+  }
+  .cvv {
+    position: absolute;
+    color: white;
+    top: 45%;
+    right: 15%;
+    font-size: 14px;
+  }
+
+  .form {
+    width: 100%;
+
+    /* border: 1px solid blueviolet; */
+    margin: 0;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    transition: all 1s;
+    opacity: 1;
+    align-items: center;
+  }
+  .form label {
+    font-size: 16px;
+  }
+  .box {
+    width: 90%;
+    /* margin: 0.3rem; */
+    padding: 0.5rem;
+    /* border: 1px solid red; */
+    margin: 0.1rem;
+  }
+  .cardholder-input {
+    width: 90%;
+    padding: 0.6rem;
+    border-radius: 7px;
+    border: 1px solid hsl(270, 3%, 87%);
+    margin: 0.3rem 0;
+    font-size: 16px;
+  }
+  .error {
+    color: rgba(209, 22, 22, 0.795);
+    padding-left: 0.3rem;
+    font-size: 12px;
+  }
+  .cardholder-input:focus-visible {
+    outline: 1.5px solid hsl(278, 82%, 15%);
+    border: none;
+  }
+  .exp-cvv {
+    width: 90%;
+    padding: 0.5rem;
+    margin: 0.3rem 0.1rem;
+    display: flex;
+  }
+  .exp {
+    width: 40%;
+
+    font-size: 16px;
+
+    /* outline: 1.5px solid hsl(278, 71%, 16%); */
+  }
+  .date {
+    width: 30%;
+    padding: 0.4rem;
+    border-radius: 7px;
+    border: 1px solid hsl(270, 3%, 87%);
+    margin: 0.2rem 0;
+    font-size: 16px;
+  }
+  .cvv-box {
+    width: 70%;
+  }
+  .cvv-code {
+    width: 80%;
+    padding: 0.5rem;
+    border-radius: 7px;
+    border: 1px solid hsl(270, 3%, 87%);
+    margin: 0.2rem 0;
+    font-size: 16px;
+  }
+  .date:focus-visible,
+  .cvv-code:focus-visible {
+    outline: 1px solid hsl(277, 78%, 15%);
+    border: none;
+  }
+  .submit {
+    /* align-self: center; */
+    margin: 0.6rem;
+    padding: 1rem 0.5rem;
+    width: 90%;
+    border-radius: 7px;
+    border: none;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .done {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bolder;
+    color: hsl(270, 14%, 64%);
+  }
+  .done img {
+    width: 20%;
+  }
+  .done h1 {
+    color: hsl(278, 68%, 11%);
+    font-weight: 550;
+  }
+  .continue {
+    margin: 1.9rem 0;
+    padding: 1rem;
+    width: 80%;
+    color: white;
+    font-size: 16px;
+    background-color: hsl(279, 85%, 10%);
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 1s;
+    opacity: 1;
+  }
+
+  .continue:hover {
+    background-color: hsl(277, 82%, 26%);
+  }
+  .submit:hover {
+    background-color: hsl(277, 82%, 26%);
+  }
+  .none {
+    display: none;
+  }
+}

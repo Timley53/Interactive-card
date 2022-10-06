@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./script.js"></script>
+    <title>Interactive-card</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="card-section">
+        <!--  -->
+        <div class="front-div card-div">
+          <header class="card-logos">
+            <img src="./images/card-logo.svg" alt="" />
+          </header>
+
+          <div class="card-numbers">
+            0000 &nbsp; 0000 &nbsp; 9000 &nbsp; 0000
+          </div>
+          <div class="name-exp">
+            <div class="name">JANE APPLESEED</div>
+            <div class="exp">00/00</div>
+          </div>
+          <!-- <img
+            src="./images/bg-card-front.png"
+            alt=""
+            class="card-front card"
+          /> -->
+        </div>
+
+        <!--  -->
+
+        <div class="back-div card-div">
+          <div class="cvv">000</div>
+          <!-- <img src="./images/bg-card-back.png" alt="" class="card-back card" /> -->
+        </div>
+      </section>
+      <section class="card-form">
+        <!--  -->
+
+        <!-- done -->
+
+        <div class="done none">
+          <img src="./images/icon-complete.svg" alt="" />
+          <br />
+          <h1>T H A N K &nbsp; Y O U !</h1>
+          We've added your card details
+
+          <button class="continue">Continue</button>
+        </div>
+
+        <!-- form -->
+        <form action="" class="form">
+          <div class="name-box box">
+            <label for="name">CARDHOLDER NAME</label>
+            <br />
+            <input
+              type="text"
+              name="name"
+              class="cardholder-name cardholder-input"
+              placeholder="eg. Jane Appleseed"
+            />
+            <div class="name-error error"></div>
+          </div>
+
+          <!--  -->
+
+          <div class="cardnumber-box box">
+            <label for="number">CARD NUMBER</label>
+            <br />
+            <input
+              type="text"
+              name="number"
+              maxlength="19"
+              class="cardholder-number cardholder-input"
+              placeholder="eg.  1234 5678 9000 0000"
+            />
+            <div class="card-no-error error"></div>
+          </div>
+
+          <!--  -->
+
+          <div class="exp-cvv">
+            <div class="exp">
+              <label for="mm/yy">EXP. MM/YY</label>
+              <br />
+              <input
+                type="number"
+                name="mm/yy"
+                class="month date"
+                maxlength="2"
+                min="1"
+                placeholder="MM"
+              />
+              &nbsp;
+
+              <input
+                type="number"
+                name="mm/yy"
+                class="year date"
+                maxlength="2"
+                min="1"
+                placeholder="YY"
+              />
+              <div class="error date-error"></div>
+            </div>
+            &nbsp;
+
+            <div class="cvv-box">
+              <label for="cvv">CVV</label>
+              <br />
+
+              <input
+                type="number"
+                class="cvv-code"
+                name="cvv"
+                maxlength="3"
+                min="1"
+                placeholder="eg. 123"
+              />
+              <br />
+              <div class="error cvv-error"></div>
+            </div>
+          </div>
+
+          <button type="submit" class="submit">COMFIRM</button>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
