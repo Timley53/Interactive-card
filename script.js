@@ -21,6 +21,14 @@ const cvv = document.querySelector(".cvv");
 const card_Numbers = document.querySelector(".card-numbers");
 
 ////////
+////
+let correct_card_number;
+let cardnumber_joined;
+let monthNumber;
+let yearNumber;
+let cvvNumber;
+
+////////
 
 const submitBtn = document.querySelector(".submit");
 let cardNo;
@@ -29,15 +37,26 @@ let cardNo;
 
 /////cardholder name
 
-cardholderName.addEventListener("keydown", function (e) {
+cardholderName.addEventListener("keyup", function (e) {
   cardholderName.style.border = "1px solid hsl(270, 3%, 87%)";
   name_error.textContent = "";
+  Cardname.innerHTML = cardholderName.value.toUpperCase();
 });
 
-cardholderNumber.addEventListener("keydown", function (e) {
+cardholderNumber.addEventListener("keyup", function (e) {
+  cardnumber_joined = cardholderNumber.value.split(" ").join("");
+  correct_card_number = Number(cardnumber_joined);
+
   if (cardholderNumber.value) {
     cardholderNumber.style.border = "1px solid hsl(270, 3%, 87%)";
     card_no_error.textContent = "";
+    card_Numbers.innerHTML = cardholderNumber.value
+      .split(" ")
+      .join(`&nbsp;&nbsp; `);
+
+    if (!correct_card_number) {
+      card_no_error.textContent = `Wrong format, numbers only`;
+    }
 
     console.log("yes");
     if (
@@ -71,11 +90,7 @@ cvvInput.addEventListener("keydown", function (e) {
 });
 
 /////////////////
-let correct_card_number;
-let cardnumber_joined;
-let monthNumber;
-let yearNumber;
-let cvvNumber;
+
 ////////////
 
 submitBtn.addEventListener("click", function (e) {
